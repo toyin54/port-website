@@ -10,6 +10,9 @@ import '../styles/Experience.css'
 
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/WorkHistory";
+import StarIcon from "@mui/icons-material/ArrowUpwardTwoTone";
+import DownIcon from "@mui/icons-material/ArrowDownwardSharp";
+
 
 
 function Experience() {
@@ -17,8 +20,14 @@ function Experience() {
 
         <div className="experience ">
             <VerticalTimeline lineColor="#3e497a">
+            <VerticalTimelineElement
+                    iconStyle={{ background: "#3e497a", color: '#fff' }}
+                    icon={<DownIcon />}
+                                    />
                 <VerticalTimelineElement
-                className="vertical-timeline-element-education"
+                className="vertical-timeline-element--education"
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date="January 2022 - April 2022"
                 iconStyle={ {background : "#e9d35b" , color : "#fff"}}
                 icon = {< WorkIcon />} >
@@ -34,8 +43,10 @@ function Experience() {
                     </p>
                 </VerticalTimelineElement> 
                 <VerticalTimelineElement
-                className="vertical-timeline-element-education"
+                className="vertical-timeline-element--education"
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 date="January 2022- Present"
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 iconStyle={ {background : "#3e497a" , color : "#fff"}}
                 icon = {< SchoolIcon />} >
                     <h3 className="vertical-timeline-element-title">
@@ -51,8 +62,10 @@ function Experience() {
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                className="vertical-timeline-element-education"
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 date="September 2021 -October 2021"
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 iconStyle={ {background : "#e9d35b" , color : "#fff"}}
                 icon = {< WorkIcon />} >
                     <h3 className="vertical-timeline-element-title">
@@ -68,8 +81,10 @@ function Experience() {
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                className="vertical-timeline-element-education"
+                className="vertical-timeline-element--work"
                 date="September 2019 - December 2020"
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 iconStyle={ {background : "#e9d35b" , color : "#fff"}}
                 icon = {< WorkIcon />} >
                     <h3 className="vertical-timeline-element-title">
@@ -87,9 +102,11 @@ function Experience() {
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                className="vertical-timeline-element-education"
+                className="vertical-timeline-element--education"
                 date="2013-2019"
-                iconStyle={ {background : "#3e497a" , color : "#fff"}}
+                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' , }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                iconStyle={ {background : "#e9d35b" , color : "#fff"}}
                 icon = {< SchoolIcon />} >
                     <h3 className="vertical-timeline-element-education">
                         Purdue University, West Lafayette , IN.
@@ -101,11 +118,16 @@ function Experience() {
                      Electrical Engineering
                     </p>
 
-                </VerticalTimelineElement>
+                </VerticalTimelineElement >
+                <VerticalTimelineElement
+                    iconStyle={{ background: "#3e497a", color: '#fff' }}
+                    icon={<StarIcon />}
+                                    />
+
                 
             </VerticalTimeline>
         </div>
-    )
+    );
 }
 
 export default Experience;
