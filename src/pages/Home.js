@@ -13,7 +13,7 @@ function Home() {
                 <h2> Hello, My Name is Ayyub Jose</h2>
                 <div className="prompt">
                     <p>
-                        A current DePaul Computer Science Graduate Student 
+                        I am a current DePaul Computer Science Graduate Student 
                         with a desire to learn and create</p>
                     <LinkedIcon />
                     <EmailIcon />
