@@ -17,13 +17,13 @@ export const ProjectList = [
     },
 
     {
-        name: 'Student',
+        name: 'Data Analysis',
         image :  Image1,
         skills : "Java , SpringBot , HTML"
     },
 
     {
-        name: 'Student',
+        name: 'SQL',
         image:  Image2,
         skills : "Java , SpringBot , HTML"
     }

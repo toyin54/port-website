@@ -8,7 +8,7 @@ function Footer(){
     return( 
     <div className='footer'>
         <div className='socialMedia'>
-            <InstaIcon />
+            <InstaIcon  href = "twitter.com"/>
             <LinkedIcon />
         </div>
         <p> &copy; Ayyub Jose PortFolio Website</p>
